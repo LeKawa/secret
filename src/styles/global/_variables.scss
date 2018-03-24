@@ -1,0 +1,24 @@
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url("../font/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: 'arimoregular';
+  src: url("../font/Arimo-Regular.ttf");
+}
+@font-face {
+  font-family: 'arimobold';
+  src: url("../font/Arimo-Bold.ttf");
+}
+
+//Color
+$mainColor: #F8CCB8;
+$secondaryColor: #4D61D6;
+$backgroundColor: #FFF9F3;
+
+//bearkpoint
+$bp-tablet: 600px;
+$bp-desktop: 949px;
+$bp-desktop-large: 1200px;
+$bp-desktop-x-large: 1800px;

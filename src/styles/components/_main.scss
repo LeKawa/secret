@@ -1,0 +1,35 @@
+html {
+  background-color: #000000;
+}
+
+.body-container {
+  padding-top: 120px;
+  width: 100%;
+  @include for-size (tablet-portrait-up) {
+    width: 65%;
+  }
+
+  &__content {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    @include for-size (tablet-portrait-up) {}
+
+    &__text {
+      font-family: 'arimobold';
+      line-height: 150%;
+      font-size: 2.8rem;
+      color: white;
+      @include for-size (tablet-portrait-up) {
+        font-size: 4.5rem;
+      }
+
+      &__hector {
+        opacity: 0.8;
+        color: #F46036;
+        text-decoration: underline;
+
+        &:hover {}
+      }
+    }
+  }
+}

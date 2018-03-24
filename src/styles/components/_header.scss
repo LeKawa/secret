@@ -1,0 +1,56 @@
+.header-container {
+  background-color: rgba(0, 0, 0, 0.9) ;
+  height: 10vh;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+
+  &__logo {
+    margin-left: 2.5%;
+    font-size: 2rem;
+    font-family: 'ralewaybold';
+    margin-top: 20px;
+    color: white;
+    &__text {
+      display: none;
+      @include for-size (tablet-portrait-up) {
+        display: block;
+      }
+      &__mobile {
+        display: block;
+        @include for-size (tablet-portrait-up) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    color: white;
+    margin-top: 25px;
+    font-size: 1.4rem;
+    margin-right: 2.5%;
+    font-family: 'arimobold';
+    display: none;
+    @include for-size (tablet-portrait-up) {
+      display: flex;
+    }
+
+    &__link {
+      letter-spacing: -.5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+
+      &:hover {
+        text-decoration: line-through;
+        opacity: 0.5;
+        transition: 0.3s all ease-out;
+      }
+    }
+  }
+}
