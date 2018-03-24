@@ -10,10 +10,12 @@ html {
   }
 
   &__content {
-    width: 65%;
+    width: 70%;
     margin-left: 3.5%;
     margin-right: 3.5%;
-    @include for-size (tablet-portrait-up) {}
+    @include for-size (tablet-portrait-up) {
+      width: 65%;
+    }
 
     &__text {
       font-family: 'arimobold';
@@ -21,7 +23,7 @@ html {
       font-size: 2.8rem;
       color: white;
       @include for-size (tablet-portrait-up) {
-        font-size: 4.8rem;
+        font-size: 5rem;
       }
 
       &__hector {
@@ -54,16 +56,15 @@ html {
       }
       &__text {
         font-family: 'arimoregular';
-        padding-top: 5px;
         color: white;
         font-size: 2.2rem;
+        padding-top: 15px;
         @include for-size (tablet-portrait-up) {
           padding-top: 20px;
         }
         &__link {
-          opacity: 0.7;
           text-decoration: none;
-          color: white;
+          color: #F46036;
         }
       }
       &__img {
@@ -72,6 +73,11 @@ html {
         &__width {
           width: 100%;
           height: auto;
+          transition: all .5s ease-out;
+          &:hover {
+            z-index: 1;
+            opacity: 0.8;
+          }
         }
       }
     }
