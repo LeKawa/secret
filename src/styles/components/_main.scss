@@ -36,43 +36,38 @@ html {
     }
   }
   &__works {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 3.5%;
     margin-right: 3.5%;
+    display: block;
     @include for-size (tablet-portrait-up) {
-      margin-top: 200px;
+      margin-top: 150px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     &__content {
-      margin-top: 100px;
-      display: 100%;
-      display: block;
+      margin-top: 80px;
       @include for-size (tablet-portrait-up) {
-        display: flex;
-      }
-      &__link {
-        padding-top: 50px;
-        &__a {
-          text-decoration: none;
-          color: #F46036;
-        }
+        width: 30%;
+        margin-bottom: 50px;
       }
       &__text {
-        padding-top: 50px;
-        font-size: 2.2rem;
-        width: 100%;
-        color: white;
-        line-height: 150%;
         font-family: 'arimoregular';
+        padding-top: 5px;
+        color: white;
+        font-size: 2.2rem;
         @include for-size (tablet-portrait-up) {
-          font-size: 3rem;
-          width: 50%;
-          padding-left: 40px;
+          padding-top: 20px;
+        }
+        &__link {
+          opacity: 0.7;
+          text-decoration: none;
+          color: white;
         }
       }
       &__img {
-        width: 100%;
         @include for-size (tablet-portrait-up) {
-          width: 50%;
         }
         &__width {
           width: 100%;
