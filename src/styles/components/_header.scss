@@ -48,6 +48,15 @@
       text-transform: uppercase;
       color: white;
       transition: all .2s ease-out;
+      &__back {
+        letter-spacing: -.5px;
+        text-decoration: none;
+        display: none;
+        text-transform: uppercase;
+        color: white;
+        transition: all .2s ease-out;
+
+      }
 
       &:hover {
         cursor: pointer;
