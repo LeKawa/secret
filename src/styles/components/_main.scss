@@ -48,10 +48,20 @@ html {
       justify-content: space-between;
       flex-wrap: wrap;
     }
+    &__title {
+      margin-top: 100px;
+      font-size: 7.9rem;
+      margin-left: 3.5%;
+      margin-right: 3.5%;
+      line-height: 150%;
+      border-bottom: 6px solid white;
+      font-family: 'arimobold';
+      color: white;
+    }
     &__content {
       margin-top: 80px;
       @include for-size (tablet-portrait-up) {
-        width: 30%;
+        width: 47%;
         margin-bottom: 50px;
       }
       &__text {
@@ -61,6 +71,7 @@ html {
         padding-top: 15px;
         @include for-size (tablet-portrait-up) {
           padding-top: 20px;
+          font-size: 2.9rem;
         }
         &__link {
           text-decoration: none;
