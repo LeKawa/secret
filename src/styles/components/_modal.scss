@@ -27,6 +27,16 @@
         font-family: 'arimobold';
         margin-top: 60px;
         background: black;
+        &__social {
+          width: 65%;
+          justify-content: space-between;
+          margin-left: 3.5%;
+          display: flex;
+          &__link {
+            color: #F46036;
+            text-decoration: none;
+          }
+        }
         &_text {
           padding-top:50px;
           padding-bottom: 50px;
