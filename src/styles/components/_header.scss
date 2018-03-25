@@ -1,5 +1,5 @@
 .header-container {
-  background-color: rgba(0, 0, 0, 0.9) ;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 10vh;
   display: flex;
   position: fixed;
@@ -13,6 +13,7 @@
     font-family: 'ralewaybold';
     margin-top: 20px;
     color: white;
+
     &__text {
       display: none;
       @include for-size (tablet-portrait-up) {
@@ -20,6 +21,7 @@
         text-decoration: none;
         color: white;
       }
+
       &__mobile {
         display: block;
         text-decoration: none;
@@ -47,15 +49,20 @@
       text-decoration: none;
       text-transform: uppercase;
       color: white;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
+
       &__back {
         letter-spacing: -.5px;
         text-decoration: none;
         display: none;
         text-transform: uppercase;
         color: white;
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
 
+        &:hover {
+          cursor: pointer;
+          opacity: 0.5;
+        }
       }
 
       &:hover {
