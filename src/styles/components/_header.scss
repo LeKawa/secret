@@ -1,9 +1,9 @@
 .header-container {
-  background-color: rgba(0, 0, 0, 0.7);
   height: 10vh;
   display: flex;
   position: fixed;
   z-index: 1000;
+  background-color: black;
   width: 100%;
   justify-content: space-between;
 
@@ -47,7 +47,6 @@
     &__link {
       letter-spacing: -.5px;
       text-decoration: none;
-      text-transform: uppercase;
       color: white;
       transition: all 0.2s ease-out;
 
@@ -55,7 +54,6 @@
         letter-spacing: -.5px;
         text-decoration: none;
         display: none;
-        text-transform: uppercase;
         color: white;
         transition: all 0.2s ease-out;
 
